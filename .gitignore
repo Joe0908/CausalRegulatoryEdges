@@ -1,0 +1,9 @@
+data/raw/
+data/processed/
+external/
+*.egg-info/
+__pycache__/
+.pytest_cache/
+.venv/
+*.bundle
+*_checkpoint.tar.gz

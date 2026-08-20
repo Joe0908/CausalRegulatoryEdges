@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this code or analysis, please cite this repository."
+title: "When Does a Regulatory Edge Become Causal?"
+type: software
+authors:
+  - family-names: Tao
+    given-names: Yuqi
+repository-code: "https://github.com/Joe0908/CausalRegulatoryEdges"
+url: "https://github.com/Joe0908/CausalRegulatoryEdges"
+version: 0.1.0
+date-released: 2026-08-20
+license: MIT
+keywords:
+  - Perturb-seq
+  - single-cell multiome
+  - gene regulatory networks
+  - causal validation
+  - erythropoiesis
+abstract: >-
+  A reproducible analysis of when observational TF-target relationships survive
+  CRISPR intervention, how developmental state changes their interpretation,
+  and whether perturbation-sensitive chromatin elements transport to independent
+  human erythroid differentiation data.

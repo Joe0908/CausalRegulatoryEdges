@@ -1,0 +1,57 @@
+{
+  "primary_context": "collection_timepoint",
+  "timepoints": [
+    "day 7",
+    "day 9",
+    "day 11",
+    "day 14"
+  ],
+  "E0_edges_tested": 619,
+  "state_dependent_interaction_fdr_lt_0_05": 53,
+  "edge_classes": {
+    "no_detected_interaction": 550,
+    "gated": 29,
+    "state_dependent_other": 23,
+    "unstable": 15,
+    "reversed": 1,
+    "constitutive": 1
+  },
+  "atlas_supported_day14_unsupported": 62,
+  "atlas_supported_day14_unsupported_state_dependent": 15,
+  "heterogeneity_enrichment_odds_ratio": 4.358902575587906,
+  "heterogeneity_enrichment_fisher_p_value": 6.3151343506775e-05,
+  "positive_controls": {
+    "GATA2": {
+      "genes_tested": 14214,
+      "interaction_fdr_lt_0_05": 126,
+      "edge_classes": {
+        "no_detected_interaction": 13378,
+        "unstable": 675,
+        "gated": 95,
+        "constitutive": 35,
+        "reversed": 19,
+        "state_dependent_other": 6,
+        "amplified": 6
+      }
+    },
+    "SPI1": {
+      "genes_tested": 14214,
+      "interaction_fdr_lt_0_05": 59,
+      "edge_classes": {
+        "no_detected_interaction": 13358,
+        "unstable": 769,
+        "gated": 35,
+        "constitutive": 28,
+        "reversed": 19,
+        "state_dependent_other": 4,
+        "amplified": 1
+      }
+    }
+  },
+  "limitations": [
+    "replicate labels are library/batch strata, not independent donors",
+    "total effects may include perturbation-induced lineage-composition shifts",
+    "cell-type-conditioned and control-trajectory analyses remain secondary",
+    "lack of a significant interaction is not proof of context invariance"
+  ]
+}

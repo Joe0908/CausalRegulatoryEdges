@@ -1,0 +1,26 @@
+{
+  "controls_only": true,
+  "cells": 1304,
+  "candidate_genes": 7291,
+  "TFs": [
+    "GATA1",
+    "NFE2",
+    "GFI1B",
+    "BCL11A",
+    "TAL1",
+    "KLF1"
+  ],
+  "candidate_edges": 43740,
+  "bootstrap_iterations": 100,
+  "stability_definition": "top 5% within TF in >= 0.70 bootstraps",
+  "stable_edges": 619,
+  "stable_edges_by_TF": {
+    "NFE2": 171,
+    "BCL11A": 135,
+    "KLF1": 83,
+    "GATA1": 82,
+    "GFI1B": 81,
+    "TAL1": 67
+  },
+  "fdr_0_05_edges": 3600
+}

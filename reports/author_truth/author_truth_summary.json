@@ -1,0 +1,275 @@
+{
+  "candidate_edges": 43740,
+  "author_TF_sensitive_edges": 11468,
+  "author_effect_025_edges": 1833,
+  "author_supported_concordant_edges": 1041,
+  "metrics": [
+    {
+      "truth": "author_TF_sensitive",
+      "method": "residualized_association",
+      "AUROC": 0.553206007244145,
+      "AUPRC": 0.3243970895563766,
+      "positive_rate": 0.262185642432556,
+      "positives": 11468
+    },
+    {
+      "truth": "author_TF_sensitive",
+      "method": "GRNBoost2",
+      "AUROC": 0.442574089080019,
+      "AUPRC": 0.22898948811039221,
+      "positive_rate": 0.262185642432556,
+      "positives": 11468
+    },
+    {
+      "truth": "author_TF_sensitive",
+      "method": "consensus",
+      "AUROC": 0.5299181930158874,
+      "AUPRC": 0.2972990963528864,
+      "positive_rate": 0.262185642432556,
+      "positives": 11468
+    },
+    {
+      "truth": "author_effect_025",
+      "method": "residualized_association",
+      "AUROC": 0.5259483593233248,
+      "AUPRC": 0.04848258603377033,
+      "positive_rate": 0.041906721536351166,
+      "positives": 1833
+    },
+    {
+      "truth": "author_effect_025",
+      "method": "GRNBoost2",
+      "AUROC": 0.4513349780788471,
+      "AUPRC": 0.035538809422111656,
+      "positive_rate": 0.041906721536351166,
+      "positives": 1833
+    },
+    {
+      "truth": "author_effect_025",
+      "method": "consensus",
+      "AUROC": 0.5233511827185052,
+      "AUPRC": 0.04666540331240045,
+      "positive_rate": 0.041906721536351166,
+      "positives": 1833
+    }
+  ],
+  "topk_enrichment": [
+    {
+      "method": "residualized_association",
+      "top_percent": 1,
+      "truth": "author_effect_025",
+      "selected_edges": 432,
+      "observed_support_rate": 0.12037037037037036,
+      "matched_null_mean": 0.049305555555555554,
+      "enrichment_ratio": 2.4413145539906105,
+      "empirical_p_value": 0.000999000999000999,
+      "null_q025": 0.03009259259259259,
+      "null_q975": 0.06712962962962964
+    },
+    {
+      "method": "residualized_association",
+      "top_percent": 1,
+      "truth": "author_supported_concordant",
+      "selected_edges": 432,
+      "observed_support_rate": 0.09027777777777778,
+      "matched_null_mean": 0.03279861111111111,
+      "enrichment_ratio": 2.752487825534618,
+      "empirical_p_value": 0.000999000999000999,
+      "null_q025": 0.018518518518518517,
+      "null_q975": 0.04861111111111111
+    },
+    {
+      "method": "residualized_association",
+      "top_percent": 5,
+      "truth": "author_effect_025",
+      "selected_edges": 2184,
+      "observed_support_rate": 0.07783882783882784,
+      "matched_null_mean": 0.04273122710622709,
+      "enrichment_ratio": 1.821591213501206,
+      "empirical_p_value": 0.000999000999000999,
+      "null_q025": 0.0347985347985348,
+      "null_q975": 0.05128205128205128
+    },
+    {
+      "method": "residualized_association",
+      "top_percent": 5,
+      "truth": "author_supported_concordant",
+      "selected_edges": 2184,
+      "observed_support_rate": 0.05128205128205128,
+      "matched_null_mean": 0.02544139194139194,
+      "enrichment_ratio": 2.0156936145705853,
+      "empirical_p_value": 0.000999000999000999,
+      "null_q025": 0.019230769230769232,
+      "null_q975": 0.03250915750915751
+    },
+    {
+      "method": "residualized_association",
+      "top_percent": 10,
+      "truth": "author_effect_025",
+      "selected_edges": 4374,
+      "observed_support_rate": 0.061957018747142205,
+      "matched_null_mean": 0.04102514860539552,
+      "enrichment_ratio": 1.510220458750362,
+      "empirical_p_value": 0.000999000999000999,
+      "null_q025": 0.03566529492455418,
+      "null_q975": 0.046410608139003204
+    },
+    {
+      "method": "residualized_association",
+      "top_percent": 10,
+      "truth": "author_supported_concordant",
+      "selected_edges": 4374,
+      "observed_support_rate": 0.039780521262002745,
+      "matched_null_mean": 0.024023319615912208,
+      "enrichment_ratio": 1.6559127505281792,
+      "empirical_p_value": 0.000999000999000999,
+      "null_q025": 0.020118884316415182,
+      "null_q975": 0.028120713305898493
+    },
+    {
+      "method": "GRNBoost2",
+      "top_percent": 1,
+      "truth": "author_effect_025",
+      "selected_edges": 432,
+      "observed_support_rate": 0.04861111111111111,
+      "matched_null_mean": 0.04777777777777777,
+      "enrichment_ratio": 1.0174418604651163,
+      "empirical_p_value": 0.48951048951048953,
+      "null_q025": 0.03009259259259259,
+      "null_q975": 0.06944444444444445
+    },
+    {
+      "method": "GRNBoost2",
+      "top_percent": 1,
+      "truth": "author_supported_concordant",
+      "selected_edges": 432,
+      "observed_support_rate": 0.02546296296296296,
+      "matched_null_mean": 0.02703472222222222,
+      "enrichment_ratio": 0.9418614607415019,
+      "empirical_p_value": 0.6183816183816184,
+      "null_q025": 0.013888888888888888,
+      "null_q975": 0.041666666666666664
+    },
+    {
+      "method": "GRNBoost2",
+      "top_percent": 5,
+      "truth": "author_effect_025",
+      "selected_edges": 2184,
+      "observed_support_rate": 0.043498168498168496,
+      "matched_null_mean": 0.04454807692307692,
+      "enrichment_ratio": 0.976432014636202,
+      "empirical_p_value": 0.6233766233766234,
+      "null_q025": 0.036172161172161175,
+      "null_q975": 0.05311355311355311
+    },
+    {
+      "method": "GRNBoost2",
+      "top_percent": 5,
+      "truth": "author_supported_concordant",
+      "selected_edges": 2184,
+      "observed_support_rate": 0.023809523809523808,
+      "matched_null_mean": 0.02472893772893773,
+      "enrichment_ratio": 0.9628203229151236,
+      "empirical_p_value": 0.6213786213786214,
+      "null_q025": 0.018772893772893772,
+      "null_q975": 0.030677655677655676
+    },
+    {
+      "method": "GRNBoost2",
+      "top_percent": 10,
+      "truth": "author_effect_025",
+      "selected_edges": 4374,
+      "observed_support_rate": 0.0386374028349337,
+      "matched_null_mean": 0.043665752171925004,
+      "enrichment_ratio": 0.8848445500905789,
+      "empirical_p_value": 0.9630369630369631,
+      "null_q025": 0.03818015546410608,
+      "null_q975": 0.04938271604938271
+    },
+    {
+      "method": "GRNBoost2",
+      "top_percent": 10,
+      "truth": "author_supported_concordant",
+      "selected_edges": 4374,
+      "observed_support_rate": 0.018747142203932327,
+      "matched_null_mean": 0.02476040237768633,
+      "enrichment_ratio": 0.7571420657051577,
+      "empirical_p_value": 0.998001998001998,
+      "null_q025": 0.02034750800182899,
+      "null_q975": 0.029492455418381344
+    },
+    {
+      "method": "consensus",
+      "top_percent": 1,
+      "truth": "author_effect_025",
+      "selected_edges": 432,
+      "observed_support_rate": 0.06481481481481481,
+      "matched_null_mean": 0.04395138888888889,
+      "enrichment_ratio": 1.4746932111444673,
+      "empirical_p_value": 0.016983016983016984,
+      "null_q025": 0.02546296296296296,
+      "null_q975": 0.0625
+    },
+    {
+      "method": "consensus",
+      "top_percent": 1,
+      "truth": "author_supported_concordant",
+      "selected_edges": 432,
+      "observed_support_rate": 0.032407407407407406,
+      "matched_null_mean": 0.026935185185185187,
+      "enrichment_ratio": 1.2031625988312133,
+      "empirical_p_value": 0.2647352647352647,
+      "null_q025": 0.013888888888888888,
+      "null_q975": 0.041666666666666664
+    },
+    {
+      "method": "consensus",
+      "top_percent": 5,
+      "truth": "author_effect_025",
+      "selected_edges": 2184,
+      "observed_support_rate": 0.054945054945054944,
+      "matched_null_mean": 0.04335164835164835,
+      "enrichment_ratio": 1.267427122940431,
+      "empirical_p_value": 0.007992007992007992,
+      "null_q025": 0.0347985347985348,
+      "null_q975": 0.051739926739926737
+    },
+    {
+      "method": "consensus",
+      "top_percent": 5,
+      "truth": "author_supported_concordant",
+      "selected_edges": 2184,
+      "observed_support_rate": 0.028846153846153848,
+      "matched_null_mean": 0.02577655677655678,
+      "enrichment_ratio": 1.1190848372886173,
+      "empirical_p_value": 0.18181818181818182,
+      "null_q025": 0.019688644688644688,
+      "null_q975": 0.03159340659340659
+    },
+    {
+      "method": "consensus",
+      "top_percent": 10,
+      "truth": "author_effect_025",
+      "selected_edges": 4374,
+      "observed_support_rate": 0.05189757658893461,
+      "matched_null_mean": 0.04213397347965248,
+      "enrichment_ratio": 1.2317275657373545,
+      "empirical_p_value": 0.000999000999000999,
+      "null_q025": 0.037037037037037035,
+      "null_q975": 0.04801097393689986
+    },
+    {
+      "method": "consensus",
+      "top_percent": 10,
+      "truth": "author_supported_concordant",
+      "selected_edges": 4374,
+      "observed_support_rate": 0.03017832647462277,
+      "matched_null_mean": 0.024756058527663466,
+      "enrichment_ratio": 1.2190279175863248,
+      "empirical_p_value": 0.014985014985014986,
+      "null_q025": 0.020118884316415182,
+      "null_q975": 0.029721079103795154
+    }
+  ],
+  "direction_note": "Concordance compares observational sign with the opposite of the published perturbation-score regression beta; stronger perturbation represents stronger loss of TF function."
+}

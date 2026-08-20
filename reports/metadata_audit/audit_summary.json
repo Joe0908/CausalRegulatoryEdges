@@ -1,0 +1,88 @@
+{
+  "metadata_rows_raw": 275208,
+  "blank_rows_removed": 137604,
+  "metadata_cells_qc_pass": 137604,
+  "timepoint_cells": 22974,
+  "replicate_cell_counts": {
+    "rep16": 8620,
+    "rep14": 7743,
+    "rep13": 6611
+  },
+  "cell_type_counts": {
+    "Orthochromatic Erythroblast": 13317,
+    "Polychromatic Erythroblast": 9120,
+    "Basophilic Erythroblast": 308,
+    "EoBasoMast Precursor": 76,
+    "Pro-Erythroblast": 24,
+    "CD14 Mono": 3,
+    "CFU-E": 2,
+    "Pre-cDC": 1,
+    "Megakaryocyte Precursor": 1,
+    "cDC2": 1,
+    "LMPP": 1,
+    "MEP": 1,
+    "Early GMP": 1
+  },
+  "representation_shortlist": [
+    "IRF1",
+    "NFE2",
+    "GATA2",
+    "SOX12",
+    "KLF1",
+    "PRDM16"
+  ],
+  "shortlist_is_not_efficacy_validated": true,
+  "h5_audits": [
+    {
+      "path": "data/raw/day14/GSE274113_rep13_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        136365,
+        10678
+      ],
+      "nonzero_entries": 113657562,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 99764
+      },
+      "h5_barcodes": 10678,
+      "metadata_barcodes": 6611,
+      "intersection": 6611,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 4067
+    },
+    {
+      "path": "data/raw/day14/GSE274113_rep14_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        130175,
+        12224
+      ],
+      "nonzero_entries": 113826535,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 93574
+      },
+      "h5_barcodes": 12224,
+      "metadata_barcodes": 7743,
+      "intersection": 7743,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 4481
+    },
+    {
+      "path": "data/raw/day14/GSE274113_rep16_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        137410,
+        13596
+      ],
+      "nonzero_entries": 134237296,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 100809
+      },
+      "h5_barcodes": 13596,
+      "metadata_barcodes": 8620,
+      "intersection": 8620,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 4976
+    }
+  ]
+}

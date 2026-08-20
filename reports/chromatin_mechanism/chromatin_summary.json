@@ -1,0 +1,11 @@
+{
+  "candidate_edges": 8,
+  "candidate_peaks_tested": 193,
+  "control_linked_peaks": 21,
+  "atac_perturbation_sensitive_peaks": 31,
+  "provisional_E2_peaks": 11,
+  "chromatin_gating_peaks": 0,
+  "edges_with_provisional_E2": 4,
+  "motif_status": "not_yet_tested; provisional_E2 is not final E2",
+  "multiple_testing_scope": "193 frozen candidate-local consensus peaks"
+}

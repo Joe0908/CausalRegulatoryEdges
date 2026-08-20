@@ -1,0 +1,11 @@
+TF,target,external_set,frozen_peaks,mapped_peaks,temporal_passing_peaks,terminal_external_edge_pass
+GATA1,ALAS2,chapter3_E2,1,1,1,True
+GATA1,ALAS2,linked_non_E2,1,1,0,False
+GATA1,CPEB4,chapter3_E2,3,3,3,True
+GATA1,CPEB4,linked_non_E2,1,1,0,False
+GATA1,GATA2,linked_non_E2,3,3,0,False
+GATA1,OSBP2,linked_non_E2,1,1,0,False
+GATA1,SLC25A37,chapter3_E2,5,5,4,True
+GATA1,SLC25A37,linked_non_E2,3,3,0,False
+GATA1,SPTA1,chapter3_E2,2,2,0,False
+GATA1,SPTA1,linked_non_E2,1,1,0,False

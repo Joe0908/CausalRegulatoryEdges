@@ -1,0 +1,20 @@
+{
+  "trajectory_definition": "controls-only RNA temporal axis; perturbed guide pseudobulks projected after fitting",
+  "control_profiles": 42,
+  "selected_variable_genes": 2000,
+  "principal_components": 10,
+  "explained_variance_ratio_sum": 0.9637763580425949,
+  "leave_one_library_out_r2": 0.9866481603435477,
+  "leave_one_library_out_mae_days": 0.23007716647622725,
+  "final_ridge_alpha": 100.0,
+  "null_absolute_shift_95_percent_days": 0.547078506034891,
+  "supported_tf_timepoint_shifts": 8,
+  "state_dependent_edges": 53,
+  "state_dependent_edges_fate_shift_associated": 25,
+  "state_dependent_edges_not_fate_shift_associated": 28,
+  "atlas_supported_day14_unsupported_state_dependent": 15,
+  "atlas_supported_day14_unsupported_state_dependent_fate_associated": 15,
+  "non_fate_state_dependence_enrichment_odds_ratio": 0.0,
+  "non_fate_state_dependence_enrichment_fisher_p_value": 0.09969525314079958,
+  "interpretation": "A fate-shift association is a diagnostic flag, not proof that the edge effect is mediated by composition."
+}

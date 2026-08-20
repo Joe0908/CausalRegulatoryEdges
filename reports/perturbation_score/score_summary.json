@@ -1,0 +1,25 @@
+{
+  "cells": 22437,
+  "candidate_genes": 7291,
+  "variable_genes": 2000,
+  "reference_guide": "AAVS1_1",
+  "reference_cells": 318,
+  "targets_scored": [
+    "GATA1",
+    "NFE2",
+    "GFI1B",
+    "BCL11A",
+    "TAL1",
+    "KLF1",
+    "GATA2",
+    "SPI1"
+  ],
+  "guides_scored": 24,
+  "effective_guides": 12,
+  "targets_passing_two_guide_rule": [
+    "BCL11A",
+    "KLF1",
+    "NFE2"
+  ],
+  "method_note": "Nearest-AAVS1_1 residual signature with guide-held-out 100-gene cross-fitting and Mixscale-style projection/Z-scoring; efficacy screen, not an E1 causal-edge test."
+}

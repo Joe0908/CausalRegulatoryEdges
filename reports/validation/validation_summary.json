@@ -1,0 +1,42 @@
+{
+  "E0_stable_residual_edges": 619,
+  "E0_GRNBoost2_consensus": {
+    "top_1_percent": 41,
+    "top_5_percent": 192,
+    "top_10_percent": 293
+  },
+  "effective_guides_by_TF": {
+    "BCL11A": [
+      "BCL11A_686",
+      "BCL11A_752"
+    ],
+    "GATA1": [
+      "GATA1_261"
+    ],
+    "GATA2": [
+      "GATA2_562"
+    ],
+    "GFI1B": [
+      "GFI1B_140"
+    ],
+    "KLF1": [
+      "KLF1_347",
+      "KLF1_395",
+      "KLF1_636"
+    ],
+    "NFE2": [
+      "NFE2_288",
+      "NFE2_533",
+      "NFE2_682"
+    ],
+    "SPI1": [
+      "SPI1_69"
+    ]
+  },
+  "E1_supported_edges": 13,
+  "E1_direction_concordant_edges": 8,
+  "E1_by_TF": {
+    "NFE2": 13
+  },
+  "interpretation": "Within-screen library/state pseudobulk evidence; library replicates are not independent donors."
+}

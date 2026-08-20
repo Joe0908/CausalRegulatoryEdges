@@ -1,0 +1,8 @@
+{
+  "total_effect_E2_peaks": 11,
+  "total_effect_E2_edges": 4,
+  "state_robust_E2_peaks": 0,
+  "state_robust_E2_edges": 0,
+  "median_absolute_effect_attenuation_among_E2": 0.4162076962832342,
+  "interpretation": "secondary sensitivity only: author cell state is post-perturbation; attenuation is compatible with fate mediation but does not prove it"
+}

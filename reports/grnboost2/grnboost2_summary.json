@@ -1,0 +1,20 @@
+{
+  "controls_only": true,
+  "implementation": "arboreto_0.1.6_compatible_local_sklearn",
+  "cells": 1304,
+  "candidate_genes": 7291,
+  "TFs": [
+    "GATA1",
+    "NFE2",
+    "GFI1B",
+    "BCL11A",
+    "TAL1",
+    "KLF1"
+  ],
+  "candidate_edges": 43740,
+  "workers": 8,
+  "mean_trees_per_target": 26.38856123988479,
+  "median_trees_per_target": 26.0,
+  "maximum_trees_per_target": 44,
+  "bootstrap_complete": false
+}
