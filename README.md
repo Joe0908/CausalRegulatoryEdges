@@ -78,16 +78,6 @@ them at the paths in [`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md). The complet
 execution order is in
 [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md).
 
-## Manuscript
-
-- [Initial full manuscript (Markdown)](manuscript/When_Does_a_Regulatory_Edge_Become_Causal_initial.md)
-- `manuscript/When_Does_a_Regulatory_Edge_Become_Causal_initial.docx`
-- `manuscript/When_Does_a_Regulatory_Edge_Become_Causal_initial.pdf`
-- Chapter-level result narratives:
-  [E0/E1](reports/MVP_FIRST_RESULTS.md),
-  [cell state](reports/CHAPTER2_FIRST_RESULTS.md),
-  [chromatin mechanism](reports/CHAPTER3_FIRST_RESULTS.md), and
-  [external validation](reports/CHAPTER4_FIRST_RESULTS.md)
 
 ## Scope and limitations
 
