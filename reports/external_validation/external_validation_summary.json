@@ -1,0 +1,17 @@
+{
+  "frozen_E2_peaks": 11,
+  "frozen_linked_non_E2_peaks": 10,
+  "mapped_E2_peaks": 4,
+  "mapped_linked_non_E2_peaks": 5,
+  "establishing_E2_peaks": 0,
+  "establishing_linked_non_E2_peaks": 0,
+  "external_edges_passed": 0,
+  "E2_vs_non_E2_establishment_odds_ratio": NaN,
+  "E2_vs_non_E2_establishment_fisher_p_value": 1.0,
+  "interpretation": "external_temporal_validation_not_external_causal_validation",
+  "GATA1_chromvar_early_mean": -0.300134818900234,
+  "GATA1_chromvar_committed_mean": 1.41802328866581,
+  "GATA1_chromvar_standardized_effect": 1.0048975454480995,
+  "GATA1_chromvar_bootstrap_ci_low": 0.7940222925650828,
+  "GATA1_chromvar_bootstrap_ci_high": 1.2194812690484467
+}

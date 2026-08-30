@@ -1,0 +1,13 @@
+{
+  "frozen_E0_edges": 619,
+  "frozen_E1_edges": 13,
+  "frozen_E2_peaks": 11,
+  "frozen_E2_edges": 4,
+  "chromatin_comparisons": {
+    "peak_ATAC_E2_less_than_linked_non_E2_mannwhitney_p": 0.001382335967271883,
+    "peak_RNA_E2_less_than_linked_non_E2_mannwhitney_p": 0.007561567201533421,
+    "edge_ATAC_E2_less_than_linked_non_E2_mannwhitney_p": 0.06666666666666667,
+    "edge_RNA_E2_less_than_linked_non_E2_mannwhitney_p": 0.06666666666666667
+  },
+  "interpretation": "post-freeze sensitivity; primary estimates unchanged"
+}

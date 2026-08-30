@@ -1,0 +1,11 @@
+data/raw/
+data/processed/
+external/
+*.egg-info/
+__pycache__/
+.pytest_cache/
+.venv/
+*.bundle
+*_checkpoint.tar.gz
+reports/evidence_integration/frozen_E0_cross_layer_matrix.csv
+reports/evidence_integration/transportable_supported_candidates.csv

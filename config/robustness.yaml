@@ -1,0 +1,18 @@
+e0:
+  selection_percent: [1, 5, 10]
+  minimum_bootstrap_frequency: [0.50, 0.70, 0.80, 0.90]
+
+e1:
+  fdr_max: [0.01, 0.05, 0.10]
+  minimum_absolute_log2_fold_change: [0.10, 0.25, 0.50]
+
+e2:
+  link_fdr_max: [0.01, 0.05, 0.10]
+  minimum_absolute_link_correlation: [0.02, 0.03, 0.05]
+  minimum_bootstrap_sign_fraction: [0.70, 0.80, 0.90]
+  minimum_peak_libraries: [3, 4, 5]
+  atac_fdr_max: [0.01, 0.05, 0.10]
+  minimum_absolute_atac_effect: [0.10, 0.20, 0.30]
+  minimum_consistent_guides: [1, 2, 3]
+  minimum_absolute_rna_effect: [0.10, 0.25, 0.40]
+  motif_relative_score_threshold: [0.80, 0.85, 0.90]

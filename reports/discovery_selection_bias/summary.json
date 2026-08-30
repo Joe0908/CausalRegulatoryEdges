@@ -1,0 +1,190 @@
+{
+  "status": "completed",
+  "original_E0_unchanged": true,
+  "original_state_matched_E1_unchanged": true,
+  "candidate_edges": 43740,
+  "sample_summary": {
+    "day 7": {
+      "cells": 1444,
+      "power_matched_cells_per_bootstrap": 1149,
+      "libraries": 4,
+      "library_counts": {
+        "rep1": 416,
+        "rep2": 294,
+        "rep3": 240,
+        "rep4": 494
+      },
+      "state_counts": {
+        "Pro-Erythroblast": 719,
+        "CFU-E": 418,
+        "Basophilic Erythroblast": 197,
+        "BFU-E": 99,
+        "Orthochromatic Erythroblast": 6,
+        "Polychromatic Erythroblast": 5
+      },
+      "E0_edges": 432,
+      "power_matched_E0_edges": 343,
+      "state_unadjusted_E0_edges": 611
+    },
+    "day 9": {
+      "cells": 2342,
+      "power_matched_cells_per_bootstrap": 1149,
+      "libraries": 4,
+      "library_counts": {
+        "rep5": 536,
+        "rep6": 567,
+        "rep7": 514,
+        "rep8": 725
+      },
+      "state_counts": {
+        "Pro-Erythroblast": 1396,
+        "Basophilic Erythroblast": 587,
+        "Polychromatic Erythroblast": 180,
+        "CFU-E": 139,
+        "BFU-E": 29,
+        "Orthochromatic Erythroblast": 11
+      },
+      "E0_edges": 583,
+      "power_matched_E0_edges": 303,
+      "state_unadjusted_E0_edges": 866
+    },
+    "day 11": {
+      "cells": 1149,
+      "power_matched_cells_per_bootstrap": 1149,
+      "libraries": 3,
+      "library_counts": {
+        "rep10": 409,
+        "rep12": 357,
+        "rep9": 383
+      },
+      "state_counts": {
+        "Polychromatic Erythroblast": 521,
+        "Basophilic Erythroblast": 362,
+        "Pro-Erythroblast": 180,
+        "Orthochromatic Erythroblast": 67,
+        "CFU-E": 17,
+        "BFU-E": 2
+      },
+      "E0_edges": 470,
+      "power_matched_E0_edges": 456,
+      "state_unadjusted_E0_edges": 903
+    },
+    "day 14": {
+      "cells": 1304,
+      "power_matched_cells_per_bootstrap": 1149,
+      "libraries": 3,
+      "library_counts": {
+        "rep13": 380,
+        "rep14": 423,
+        "rep16": 501
+      },
+      "state_counts": {
+        "Orthochromatic Erythroblast": 760,
+        "Polychromatic Erythroblast": 544
+      },
+      "E0_edges": 619,
+      "power_matched_E0_edges": 571,
+      "state_unadjusted_E0_edges": 815
+    }
+  },
+  "timepoint_E0_edges": {
+    "day 7": 432,
+    "day 9": 583,
+    "day 11": 470,
+    "day 14": 619
+  },
+  "power_matched_timepoint_E0_edges": {
+    "day 7": 343,
+    "day 9": 303,
+    "day 11": 456,
+    "day 14": 571
+  },
+  "day14_reproduction": {
+    "frozen_edges": 619,
+    "reconstructed_edges": 619,
+    "membership_disagreements": 0
+  },
+  "discovery_classes": {
+    "never_selected": 42186,
+    "early_only_discovery": 571,
+    "day14_only_discovery": 439,
+    "day11_only_preterminal_discovery": 220,
+    "cross_time_discovery": 157,
+    "preterminal_only_discovery": 144,
+    "persistent_discovery": 23
+  },
+  "preterminal_E0_omitted_by_day14": 935,
+  "power_robust_preterminal_omission": 638,
+  "union_edges_tested": 1554,
+  "union_testable_edges": 990,
+  "union_edge_time_hypotheses": 3960,
+  "union_support_by_timepoint": {
+    "day 7": 6,
+    "day 9": 8,
+    "day 11": 7,
+    "day 14": 43
+  },
+  "frozen_edges_within_union_support_by_timepoint": {
+    "day 7": 2,
+    "day 9": 3,
+    "day 11": 2,
+    "day 14": 13
+  },
+  "union_any_preterminal_support": 17,
+  "early_supported_omitted_by_day14": 11,
+  "early_supported_omission_rate": 0.6470588235294118,
+  "matched_time_discovery_and_support": 4,
+  "matched_time_supported_omitted_by_day14": 4,
+  "matched_time_supported_omission_rate": 1.0,
+  "matched_time_direction_concordant": 4,
+  "power_robust_matched_time_supported_omissions": 3,
+  "power_robust_early_supported_omissions": 7,
+  "omitted_vs_day14_selected_early_support_fisher": {
+    "contingency": [
+      [
+        11,
+        590
+      ],
+      [
+        6,
+        383
+      ]
+    ],
+    "odds_ratio": 1.1901129943502824,
+    "p_value": 0.8071605055977236
+  },
+  "frozen_619_support_by_timepoint": {
+    "day 7": 3,
+    "day 9": 4,
+    "day 11": 3,
+    "day 14": 13
+  },
+  "multiplicity": "BH across all finite union edge-by-time total-response tests",
+  "interpretation_boundary": "The audit estimates discovery-stage omission within six TFs and the guide-testable atlas. It does not prove direct TF-target binding or recover edges for TFs without two effective guides.",
+  "state_residualization_sensitivity": {
+    "timepoint_E0_edges": {
+      "day 7": 611,
+      "day 9": 866,
+      "day 11": 903,
+      "day 14": 815
+    },
+    "preterminal_E0_omitted_by_day14": 1461,
+    "state_unadjusted_only_preterminal_omission": 744,
+    "union_edges_tested": 2080,
+    "union_testable_edges": 1336,
+    "union_support_by_timepoint": {
+      "day 7": 12,
+      "day 9": 8,
+      "day 11": 8,
+      "day 14": 75
+    },
+    "any_preterminal_support": 25,
+    "early_supported_omitted_by_day14": 19,
+    "matched_time_discovery_and_support": 11,
+    "matched_time_supported_omitted_by_day14": 10,
+    "matched_time_direction_concordant": 9,
+    "state_unadjusted_only_matched_time_supported": 4,
+    "state_unadjusted_only_matched_time_direction_concordant": 3,
+    "interpretation": "Removing state from the observational adjustment changes the estimand to include between-state developmental covariance; it is a bounded sensitivity analysis, not a replacement E0 definition."
+  }
+}

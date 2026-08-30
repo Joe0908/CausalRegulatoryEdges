@@ -1,0 +1,49 @@
+{
+  "status": "provisional_aggregate_screen_only",
+  "strict_time_resolved_E1_completed": false,
+  "reason_strict_not_completed": "timepoint-specific effective-guide and leave-one-guide-out fits cannot be reconstructed from the committed aggregate table",
+  "original_day14_state_matched_E1_unchanged": true,
+  "E0_edges_frozen": 619,
+  "edge_time_hypotheses": 2476,
+  "provisional_support_by_timepoint": {
+    "day 7": 5,
+    "day 9": 4,
+    "day 11": 2,
+    "day 14": 16
+  },
+  "provisional_any_timepoint_support": 24,
+  "preterminal_only_candidates": 8,
+  "preterminal_only_with_detected_interaction": 1,
+  "provisional_any_timepoint_support_by_TF": {
+    "NFE2": 20,
+    "BCL11A": 3,
+    "KLF1": 1
+  },
+  "provisional_support_patterns": {
+    "0000": 595,
+    "0001": 15,
+    "1000": 4,
+    "0100": 2,
+    "1100": 1,
+    "0111": 1,
+    "0010": 1
+  },
+  "provisional_temporal_support_classes": {
+    "no_timepoint_support_detected": 365,
+    "guide_efficacy_limited": 230,
+    "localized_support_no_detected_heterogeneity": 13,
+    "late_onset_candidate_with_heterogeneity": 10,
+    "transient_candidate_with_heterogeneity": 1
+  },
+  "day14_provisional_supported": 16,
+  "day14_overlap_with_strict_E1": 10,
+  "day14_provisional_only": 6,
+  "day14_strict_only": 3,
+  "multiplicity": "BH across all 2476 frozen E0 edge-by-time tests",
+  "limitations": [
+    "all targeting guides contributed to the committed timepoint model",
+    "timepoint-specific leave-one-effective-guide-out estimates are unavailable",
+    "total effects may include perturbation-induced lineage-composition shifts",
+    "lack of support at a timepoint is not evidence of a zero effect"
+  ]
+}

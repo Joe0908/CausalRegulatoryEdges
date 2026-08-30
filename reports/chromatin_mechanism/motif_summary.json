@@ -1,0 +1,12 @@
+{
+  "peaks_scanned": 193,
+  "motif_threshold_relative_score": 0.85,
+  "motif_supported_peaks": 159,
+  "provisional_E2_peaks": 11,
+  "final_E2_peaks": 11,
+  "edges_with_final_E2": 4,
+  "chromatin_gating_E2_peaks": 0,
+  "assembly": "GRCh38",
+  "coordinate_conversion": "10x BED start + 1 through BED end",
+  "motif_source": "JASPAR 2024 CORE vertebrates"
+}

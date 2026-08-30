@@ -1,0 +1,46 @@
+{
+  "analysis_role": "secondary_post_treatment_state_diagnostic",
+  "states_requested": [
+    "BFU-E",
+    "CFU-E",
+    "Pro-Erythroblast",
+    "Basophilic Erythroblast",
+    "Polychromatic Erythroblast",
+    "Orthochromatic Erythroblast"
+  ],
+  "states_modeled": [
+    "CFU-E",
+    "Pro-Erythroblast",
+    "Basophilic Erythroblast",
+    "Polychromatic Erythroblast",
+    "Orthochromatic Erythroblast"
+  ],
+  "excluded_states": [
+    "BFU-E"
+  ],
+  "minimum_cells_per_profile": 15,
+  "E0_edges_tested": 619,
+  "within_state_interaction_fdr_lt_0_05": 9,
+  "primary_timepoint_dependent_edges": 53,
+  "primary_edges_also_within_state_heterogeneous": 2,
+  "fate_shift_associated_primary_edges": 25,
+  "fate_shift_associated_also_within_state_heterogeneous": 1,
+  "non_fate_associated_primary_edges": 28,
+  "non_fate_associated_also_within_state_heterogeneous": 1,
+  "primary_and_within_state_candidates": [
+    {
+      "TF": "GATA1",
+      "target": "OSBP2"
+    },
+    {
+      "TF": "NFE2",
+      "target": "DCAF11"
+    }
+  ],
+  "within_state_classes": {
+    "no_detected_interaction": 575,
+    "unstable": 35,
+    "gated": 9
+  },
+  "caution": "Author erythroid labels are measured after perturbation; these results diagnose persistence within labels but do not by themselves identify a causal mediator."
+}

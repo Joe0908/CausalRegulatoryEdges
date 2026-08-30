@@ -1,0 +1,11 @@
+TF,target,external_set,frozen_peaks,mapped_peaks,establishing_peaks,external_passing_peaks,rna_delay_pass,external_edge_pass
+GATA1,ALAS2,targeted_E2,1,0,0,0,True,False
+GATA1,ALAS2,linked_non_E2,1,0,0,0,True,False
+GATA1,CPEB4,targeted_E2,3,0,0,0,False,False
+GATA1,CPEB4,linked_non_E2,1,1,0,0,False,False
+GATA1,GATA2,linked_non_E2,3,2,0,0,False,False
+GATA1,OSBP2,linked_non_E2,1,1,0,0,True,False
+GATA1,SLC25A37,targeted_E2,5,3,0,0,True,False
+GATA1,SLC25A37,linked_non_E2,3,1,0,0,True,False
+GATA1,SPTA1,targeted_E2,2,1,0,0,True,False
+GATA1,SPTA1,linked_non_E2,1,0,0,0,True,False

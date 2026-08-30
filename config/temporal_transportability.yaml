@@ -1,0 +1,72 @@
+analysis:
+  name: preterminal-observational-transportability
+  status: frozen-before-analysis
+  frozen_on: 2026-08-26
+  random_seed: 20260826
+
+inputs:
+  controls: data/processed/controls_all_timepoints
+  day14_edges: reports/author_truth/observational_edges_with_author_truth.csv.gz
+  e1_matrix: reports/validation/E0_to_E1_edge_matrix.csv.gz
+  perturbation_trajectory: reports/state_dependence/timepoint_and_within_state_edges.csv.gz
+
+estimand:
+  frozen_edge_set: day14_E0_stable_edges
+  fixed_target_universe: day14_7291_candidate_targets
+  discovery_anchor: day14_controls_only_association
+  confirmatory_timepoints: [day 7, day 9, day 11]
+  day14_use: direction_anchor_and_descriptive_only
+  control_guides: [NT_1, NT_2, NT_3]
+  erythroid_cell_types:
+    - BFU-E
+    - CFU-E
+    - Pro-Erythroblast
+    - Basophilic Erythroblast
+    - Polychromatic Erythroblast
+    - Orthochromatic Erythroblast
+  minimum_cells_per_library: 30
+  reliability: leave_one_library_out_sign_agreement
+
+transportability:
+  rank_universe: all_43740_day14_candidate_edges
+  primary_features:
+    - prior_sign_concordance_fraction
+    - prior_median_rank_score
+    - prior_fisher_z_sd
+  descriptive_transportable_rule:
+    require_all_three_signs_concordant: true
+    maximum_median_rank_fraction: 0.10
+    minimum_leave_one_library_out_sign_fraction: 0.67
+
+prediction:
+  primary_outcome: author_effect_025
+  secondary_outcomes:
+    - author_supported_concordant
+    - author_TF_sensitive
+    - strict_day14_E1_among_testable_TFs
+  baseline_features:
+    - TF
+    - absolute_association
+    - log1p_mean_cpm
+    - detection_fraction
+  extended_features:
+    - prior_sign_concordance_fraction
+    - prior_median_rank_score
+    - prior_fisher_z_sd
+  cross_validation:
+    splits: 5
+    repeats: 20
+    group: target
+  target_cluster_bootstrap_iterations: 2000
+
+diagnostics:
+  status: post-freeze_descriptive
+  preterminal_association_heterogeneity: inverse_variance_Fisher_z_Q_test
+  minimum_direction_concordance_fraction: 0.50
+
+interpretation:
+  - The confirmatory transportability predictors use no day14 expression values beyond the frozen edge identity and sign.
+  - Libraries are technical or batch strata, not independent donors.
+  - Timepoint-specific associations average across different erythroid state mixtures and are not pure within-state time effects.
+  - Failure to detect incremental prediction is not evidence of causal absence unless confidence intervals exclude a meaningful effect.
+  - Strict E1 is a sensitivity endpoint because its 13 positives all belong to NFE2 and three TFs fail the effective-guide rule.

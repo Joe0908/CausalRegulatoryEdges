@@ -1,0 +1,17 @@
+{
+  "frozen_E2_peaks": 11,
+  "mapped_E2_peaks": 11,
+  "temporal_passing_E2_peaks": 8,
+  "frozen_linked_non_E2_peaks": 10,
+  "mapped_linked_non_E2_peaks": 10,
+  "temporal_passing_linked_non_E2_peaks": 0,
+  "terminal_external_edges_passed": 3,
+  "E2_vs_non_E2_temporal_odds_ratio": Infinity,
+  "E2_vs_non_E2_temporal_fisher_p_value": 0.0010319917440660474,
+  "E2_edges_tested": 4,
+  "linked_non_E2_edges_tested": 6,
+  "linked_non_E2_edges_passed": 0,
+  "E2_vs_non_E2_edge_odds_ratio": Infinity,
+  "E2_vs_non_E2_edge_fisher_p_value": 0.03333333333333333,
+  "interpretation": "stage_resolved_external_temporal_validation_not_causal_retest"
+}

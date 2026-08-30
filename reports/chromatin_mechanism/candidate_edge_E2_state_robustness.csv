@@ -1,0 +1,9 @@
+TF,target,candidate_role,total_effect_E2_peaks,state_robust_E2_peaks,median_state_attenuation_among_E2
+GATA1,ALAS2,fate_shift_comparison,1,0,0.37017762386932906
+GATA1,CPEB4,experimental_positive_control,3,0,0.42071329159364046
+GATA1,EPOR,fate_shift_comparison,0,0,
+GATA1,GATA2,regulatory_positive_control,0,0,
+GATA1,OSBP2,primary_state_candidate,0,0,
+GATA1,SLC25A37,fate_shift_comparison,5,0,0.29643025061939077
+GATA1,SPTA1,fate_shift_comparison,2,0,0.5786519079793829
+NFE2,DCAF11,sign_conflict_candidate,0,0,

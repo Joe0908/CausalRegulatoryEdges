@@ -1,0 +1,13 @@
+{
+  "E0_edges": 619,
+  "targets_overlapping_any_tf_signature": 76,
+  "targets_overlapping_effective_guide_signature": 53,
+  "strict_E1_edges_affected": 7,
+  "edge_guide_refits": 155,
+  "edges_with_effective_guide_membership_change": 2,
+  "edges_with_two_guide_testability_change": 0,
+  "strict_E1_edges_with_membership_change": 0,
+  "strict_time_supported_edges_with_membership_change": 0,
+  "maximum_original_score_reconstruction_difference": 9.90960785651751e-17,
+  "interpretation": "post-freeze target-leakage sensitivity; committed guide efficacy and E1 definitions unchanged"
+}

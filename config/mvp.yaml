@@ -1,0 +1,218 @@
+project:
+  name: interventional-validation-of-single-cell-grns
+  random_seed: 20260820
+
+data:
+  geo_accession: GSE274113
+  metadata: data/metadata/GSE274113_annotated_metadata.csv.gz
+  h5_template: data/raw/all_timepoints/GSE274113_{replicate}_filtered_feature_bc_matrix.h5
+  replicate_timepoints:
+    day 7: [rep1, rep2, rep3, rep4]
+    day 9: [rep5, rep6, rep7, rep8]
+    day 11: [rep9, rep10, rep12]
+    day 14: [rep13, rep14, rep16]
+  day14_replicates: [rep13, rep14, rep16]
+  non_targeting_label: NT
+  non_targeting_guides: [AAVS1_1, AAVS1_2, AAVS1_3, NT_1, NT_2, NT_3]
+  discovery_control_guides: [NT_1, NT_2, NT_3]
+  intervention_reference_guides: [AAVS1_1, AAVS1_2, AAVS1_3]
+
+mvp:
+  timepoint: day 14
+  cell_types:
+    - Polychromatic Erythroblast
+    - Orthochromatic Erythroblast
+  minimum_guides_per_target: 2
+  minimum_cells_per_guide_total: 100
+  minimum_cells_per_guide_per_replicate: 15
+  shortlist_size: 6
+  primary_tf_panel: [GATA1, NFE2, GFI1B, BCL11A, TAL1, KLF1]
+  state_dependence_positive_controls: [GATA2, SPI1]
+  replicate_interpretation: library_batch_not_independent_donor
+
+guide_efficacy_screen:
+  # Empirical screen only; final guide efficacy is locked after inspecting the
+  # control-guide null distribution and the authors' Mixscale-style score.
+  normalization_scale: 1000000
+  minimum_cells_per_pseudobulk: 15
+  minimum_gene_cpm: 1.0
+  null_quantile: 0.95
+
+perturbation_score:
+  reference_guide: AAVS1_1
+  null_guides: [AAVS1_2, AAVS1_3, NT_1, NT_2, NT_3]
+  variable_genes: 2000
+  principal_components: 30
+  nearest_reference_neighbors: 20
+  signature_genes: 100
+  bootstrap_iterations: 1000
+  null_quantile: 0.95
+  guide_fdr_max: 0.05
+  minimum_direction_correlation: 0.0
+
+edge_discovery:
+  controls_only: true
+  methods: [GRNBoost2, residualized_association]
+  bootstrap_iterations: 100
+  minimum_bootstrap_frequency: 0.70
+  evaluation_cutoffs_percent: [1, 5, 10]
+  bootstrap_selection_percent: 5
+  minimum_detection_fraction: 0.05
+  minimum_mean_cpm: 1.0
+  exclude_gene_prefixes: [MT-]
+  matched_null_iterations: 1000
+
+causal_validation:
+  fdr_max: 0.05
+  minimum_absolute_log2_fold_change: 0.25
+  minimum_effective_guides: 2
+  require_guide_direction_consistency: true
+  require_leave_one_guide_out_direction_consistency: true
+
+state_dependence:
+  # The primary context is assigned at collection and therefore cannot be
+  # caused by the perturbation. Author cell labels are secondary annotations.
+  primary_context: Timepoint
+  ordered_timepoints: [day 7, day 9, day 11, day 14]
+  minimum_cells_per_pseudobulk: 15
+  interaction_fdr_max: 0.05
+  minimum_on_effect: 0.25
+  maximum_off_effect: 0.125
+  minimum_effect_range: 0.25
+  minimum_consistent_guides: 2
+  # A non-significant perturbation-by-time interaction is not itself evidence
+  # for either a stable response or a null response. The following thresholds
+  # define the orthogonal common-effect and equivalence-aware diagnostics.
+  common_effect_fdr_max: 0.05
+  persistent_response_minimum_effect: 0.125
+  minimum_effective_guides_for_response: 2
+  equivalence_alpha: 0.05
+  positive_control_tfs: [GATA2, SPI1]
+  secondary_erythroid_states:
+    - BFU-E
+    - CFU-E
+    - Pro-Erythroblast
+    - Basophilic Erythroblast
+    - Polychromatic Erythroblast
+    - Orthochromatic Erythroblast
+  interpretation: library_batch_not_independent_donor
+
+time_resolved_support:
+  # This is a collection-time total-response estimand and does not replace the
+  # frozen state-matched day-14 E1 result.
+  global_fdr_max: 0.05
+  minimum_absolute_effect: 0.25
+  minimum_effective_guides: 2
+  minimum_consistent_guides: 2
+  interaction_fdr_max: 0.05
+  contrast_fdr_max: 0.05
+  negligible_effect_margin: 0.125
+  equivalence_alpha: 0.05
+  interpretation: total_response_not_state_matched_E1
+
+control_trajectory:
+  discovery_guides: [NT_1, NT_2, NT_3]
+  variable_genes: 2000
+  principal_components: 10
+  ridge_alphas: [0.001, 0.01, 0.1, 1.0, 10.0, 100.0, 1000.0, 10000.0]
+  null_absolute_quantile: 0.95
+
+chromatin_mechanism:
+  # Candidate set frozen before looking at local ATAC results.  OSBP2 and
+  # DCAF11 are the two within-state candidates; four erythroid genes are
+  # fate-shift comparisons; CPEB4 and GATA2 are literature-positive controls.
+  window_bp: 50000
+  candidates:
+    - {TF: GATA1, target: OSBP2, gene_id: ENSG00000184792, chromosome: chr22, tss: 30693782, strand: 1, role: primary_state_candidate}
+    - {TF: NFE2, target: DCAF11, gene_id: ENSG00000100897, chromosome: chr14, tss: 24114010, strand: 1, role: sign_conflict_candidate}
+    - {TF: GATA1, target: SPTA1, gene_id: ENSG00000163554, chromosome: chr1, tss: 158686715, strand: -1, role: fate_shift_comparison}
+    - {TF: GATA1, target: ALAS2, gene_id: ENSG00000158578, chromosome: chrX, tss: 55030986, strand: -1, role: fate_shift_comparison}
+    - {TF: GATA1, target: SLC25A37, gene_id: ENSG00000147454, chromosome: chr8, tss: 23528859, strand: 1, role: fate_shift_comparison}
+    - {TF: GATA1, target: EPOR, gene_id: ENSG00000187266, chromosome: chr19, tss: 11384343, strand: -1, role: fate_shift_comparison}
+    - {TF: GATA1, target: CPEB4, gene_id: ENSG00000113742, chromosome: chr5, tss: 173888313, strand: 1, role: experimental_positive_control}
+    - {TF: GATA1, target: GATA2, gene_id: ENSG00000179348, chromosome: chr3, tss: 128493208, strand: -1, role: regulatory_positive_control}
+  link_control_guides: [NT_1, NT_2, NT_3]
+  link_fdr_max: 0.05
+  minimum_absolute_link_correlation: 0.03
+  minimum_bootstrap_sign_fraction: 0.80
+  bootstrap_iterations: 200
+  minimum_peak_libraries: 4
+  library_robustness_minimum_control_cells: 30
+  library_robustness_minimum_sign_fraction: 0.80
+  library_robustness_meta_fdr_max: 0.05
+  minimum_cells_per_pseudobulk: 15
+  atac_interaction_fdr_max: 0.05
+  minimum_absolute_atac_effect: 0.20
+  minimum_consistent_guides: 2
+  motif_relative_score_threshold: 0.85
+  motif_models:
+    GATA1: MA0035.5
+    NFE2: MA0841.2
+  interpretation: targeted_candidate_analysis_not_genome_wide_peak_discovery
+
+external_validation:
+  # Frozen before inspecting candidate peak or target-gene trajectories in the
+  # external data. This analysis tests temporal transport of the targeted
+  # peak set; it is not an independent perturbation test.
+  dataset: Ranzoni_2021_human_fetal_hematopoiesis
+  repository: https://gitlab.com/cvejic-group/integrative-scrna-scatac-human-foetal
+  rna_object: external/ranzoni_hematopoiesis/Data/ScanpyObjets/MergedAllSamples_PAGA.h5ad
+  atac_peak_matrix: external/ranzoni_hematopoiesis/Data/scATAC_CSV_file_for_Scanpy/mergedATAC-peaks.csv
+  atac_metadata: external/ranzoni_hematopoiesis/Data/scATAC_CSV_file_for_Scanpy/mergedATAC-metadata.csv
+  atac_chromvar: external/ranzoni_hematopoiesis/Data/scATAC_CSV_file_for_Scanpy/mergedATAC-chromvar.csv
+  atac_harmony: external/ranzoni_hematopoiesis/Data/scATAC_CSV_file_for_Scanpy/mergedATAC-HAR.csv
+  genome_build: GRCh38
+  primary_tf: GATA1
+  positive_peak_set: targeted_E2_peaks
+  comparison_peak_set: targeted_linked_non_E2_peaks
+  coordinate_mapping:
+    primary: interval_overlap
+    nearest_peak_max_distance_bp: 2000
+    nearest_peak_use: sensitivity_only
+  rna_states:
+    early: HSC-MPPs
+    committed: MEMPs
+    late: Erythroid cells
+    cycling_states_use: sensitivity_only
+  atac_states:
+    early: MPP
+    committed: Comm-Prog
+    cycling_states_use: sensitivity_only
+  minimum_cells_per_state: 30
+  minimum_samples_per_rna_state: 3
+  minimum_standardized_atac_establishment_effect: 0.25
+  require_atac_bootstrap_ci_above_zero: true
+  minimum_late_rna_log2_fold_change: 0.50
+  maximum_rna_commitment_fraction: 0.50
+  require_late_rna_bootstrap_ci_above_zero: true
+  bootstrap_iterations: 1000
+  bootstrap_confidence: 0.95
+  external_edge_pass_rule: overlapping_peak_establishes_and_target_expression_is_delayed
+  chromvar_role: global_GATA_activity_context_not_edge_specific_evidence
+  interpretation: external_temporal_validation_not_external_causal_validation
+  terminal_erythroid_fallback:
+    dataset: Ludwig_2019_adult_CD34_erythroid_differentiation
+    geo_atac: GSE115672
+    geo_rna: GSE115678
+    atac_peaks: external/ludwig_erythropoiesis/GSE115672_ery_only.bed.gz
+    atac_counts: external/ludwig_erythropoiesis/GSE115672_ery_only.counts.tsv.gz
+    rna_counts: external/ludwig_erythropoiesis/GSE115678_RNAseq_rawGeneCounts.txt.gz
+    liftover_chain: external/ludwig_erythropoiesis/hg38ToHg19.over.chain.gz
+    genome_build: hg19
+    ordered_populations:
+      P1: MyP
+      P2: CFU-E
+      P3: ProE1
+      P4: ProE2
+      P5: BasoE
+      P6: PolyE
+      P7: OrthoE
+      P8: Orth-Ret
+    coordinate_mapping: interval_overlap_after_hg38_to_hg19_liftover
+    activation_fraction: 0.50
+    minimum_atac_dynamic_range_log2_cpm: 1.0
+    minimum_rna_dynamic_range_log2_cpm: 1.0
+    minimum_atac_lead_stages: 1
+    minimum_bootstrap_lead_fraction: 0.80
+    bootstrap_iterations: 1000
+    edge_pass_rule: any_overlapping_E2_peak_has_reproducible_atac_before_rna_activation

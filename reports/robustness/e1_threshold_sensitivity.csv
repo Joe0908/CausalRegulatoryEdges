@@ -1,0 +1,10 @@
+parameter,value,supported_edges,direction_concordant_edges,TFs_with_support
+fdr_max,0.01,10,7,1
+fdr_max,0.05,13,8,1
+fdr_max,0.1,15,8,1
+minimum_absolute_log2_fold_change,0.1,28,14,1
+minimum_absolute_log2_fold_change,0.25,13,8,1
+minimum_absolute_log2_fold_change,0.5,2,2,1
+guide_robustness,pooled_effect_only,13,8,1
+guide_robustness,guide_consistency,13,8,1
+guide_robustness,guide_and_leave_one_out,13,8,1

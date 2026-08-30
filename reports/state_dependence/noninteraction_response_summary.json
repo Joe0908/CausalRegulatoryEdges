@@ -1,0 +1,63 @@
+{
+  "E0_edges_tested": 619,
+  "time_dependent": 53,
+  "no_detected_interaction": 566,
+  "response_patterns": {
+    "uniformly_small_estimates_only": 261,
+    "unresolved_no_interaction": 255,
+    "time_dependent": 53,
+    "localized_response_no_heterogeneity": 37,
+    "uniformly_weak_supported": 7,
+    "persistent_response_supported": 6
+  },
+  "refined_response_patterns": {
+    "uniformly_small_estimates_only": 261,
+    "reason_coded_unresolved": 215,
+    "time_dependent": 53,
+    "localized_response_no_heterogeneity": 37,
+    "small_common_response_supported": 26,
+    "temporally_stable_small_response_supported": 11,
+    "uniformly_weak_supported": 7,
+    "persistent_response_supported": 6,
+    "near_threshold_persistent": 3
+  },
+  "unresolved_reason_counts": {
+    "guide_efficacy_limited": 90,
+    "near_zero_sign_crossing_common_unsupported": 68,
+    "small_common_response_supported": 37,
+    "meaningful_polarity_conflict_interaction_unresolved": 21,
+    "small_same_direction_not_equivalently_weak": 18,
+    "common_response_temporal_pattern_unresolved": 9,
+    "moderate_common_estimate_imprecise": 6,
+    "near_threshold_persistent_response": 3,
+    "common_response_direction_inconsistent": 2,
+    "common_response_guide_inconsistent": 1
+  },
+  "no_interaction_uniformly_small_point_estimates": 268,
+  "no_interaction_any_timepoint_response_supported": 40,
+  "no_interaction_common_effect_fdr_lt_0_05": 140,
+  "persistent_response_supported": 6,
+  "persistent_strong_response_supported": 4,
+  "temporally_stable_response_supported": 2,
+  "uniformly_negligible_supported_all_TFs": 18,
+  "uniformly_weak_supported_guide_testable": 7,
+  "stable_small_response_supported": 11,
+  "near_threshold_persistent": 3,
+  "reason_coded_unresolved_remaining": 215,
+  "thresholds": {
+    "common_effect_fdr_max": 0.05,
+    "persistent_response_minimum_effect": 0.125,
+    "strong_response_minimum_effect": 0.25,
+    "negligible_effect_margin": 0.125,
+    "temporal_equivalence_margin": 0.25,
+    "equivalence_alpha": 0.05
+  },
+  "limitations": [
+    "interaction non-significance is not temporal equivalence",
+    "uniformly small point estimates are not evidence of negligible effects",
+    "weak-response claims require at least two effective guides",
+    "reason codes identify the evidence blocker, not a causal mechanism",
+    "stable small responses are not proven negligible at every timepoint",
+    "replicate labels are library/batch strata, not independent donors"
+  ]
+}

@@ -1,0 +1,418 @@
+{
+  "design_status": "frozen_before_analysis",
+  "confirmatory_timepoints": [
+    "day 7",
+    "day 9",
+    "day 11"
+  ],
+  "sample_summary": {
+    "day 7": {
+      "cells": 1444,
+      "libraries": 4,
+      "replicate_counts": {
+        "rep4": 494,
+        "rep1": 416,
+        "rep2": 294,
+        "rep3": 240
+      },
+      "cell_type_counts": {
+        "Pro-Erythroblast": 719,
+        "CFU-E": 418,
+        "Basophilic Erythroblast": 197,
+        "BFU-E": 99,
+        "Orthochromatic Erythroblast": 6,
+        "Polychromatic Erythroblast": 5
+      },
+      "estimable_edges": 43734,
+      "correlation_fisher_z_weight": 1431
+    },
+    "day 9": {
+      "cells": 2342,
+      "libraries": 4,
+      "replicate_counts": {
+        "rep8": 725,
+        "rep6": 567,
+        "rep5": 536,
+        "rep7": 514
+      },
+      "cell_type_counts": {
+        "Pro-Erythroblast": 1396,
+        "Basophilic Erythroblast": 587,
+        "Polychromatic Erythroblast": 180,
+        "CFU-E": 139,
+        "BFU-E": 29,
+        "Orthochromatic Erythroblast": 11
+      },
+      "estimable_edges": 43740,
+      "correlation_fisher_z_weight": 2329
+    },
+    "day 11": {
+      "cells": 1149,
+      "libraries": 3,
+      "replicate_counts": {
+        "rep10": 409,
+        "rep9": 383,
+        "rep12": 357
+      },
+      "cell_type_counts": {
+        "Polychromatic Erythroblast": 521,
+        "Basophilic Erythroblast": 362,
+        "Pro-Erythroblast": 180,
+        "Orthochromatic Erythroblast": 67,
+        "CFU-E": 17,
+        "BFU-E": 2
+      },
+      "estimable_edges": 43740,
+      "correlation_fisher_z_weight": 1137
+    }
+  },
+  "frozen_E0_edges": 619,
+  "observationally_transportable_edges": 235,
+  "preterminal_association_heterogeneity_fdr_005_edges": 64,
+  "diagnostic_edge_flags": {
+    "day14_selected_not_preterminal_transportable": 370,
+    "observationally_variable_and_perturbationally_variable": 33,
+    "transportable_but_strict_E1_unsupported": 166,
+    "observational_perturbation_direction_conflict": 172
+  },
+  "descriptive_edge_classes": {
+    "variable_and_atlas_unsupported": 345,
+    "transportable_but_atlas_unsupported": 210,
+    "variable_but_atlas_supported": 39,
+    "transportable_and_atlas_supported": 25
+  },
+  "support_rates_by_transportability": {
+    "author_effect_025": {
+      "False": {
+        "edges": 384,
+        "supported": 39,
+        "support_rate": 0.1015625
+      },
+      "True": {
+        "edges": 235,
+        "supported": 25,
+        "support_rate": 0.10638297872340426
+      }
+    },
+    "author_supported_concordant": {
+      "False": {
+        "edges": 384,
+        "supported": 27,
+        "support_rate": 0.0703125
+      },
+      "True": {
+        "edges": 235,
+        "supported": 16,
+        "support_rate": 0.06808510638297872
+      }
+    },
+    "author_TF_sensitive": {
+      "False": {
+        "edges": 384,
+        "supported": 229,
+        "support_rate": 0.5963541666666666
+      },
+      "True": {
+        "edges": 235,
+        "supported": 167,
+        "support_rate": 0.7106382978723405
+      }
+    },
+    "E1_supported": {
+      "False": {
+        "edges": 218,
+        "supported": 8,
+        "support_rate": 0.03669724770642202
+      },
+      "True": {
+        "edges": 171,
+        "supported": 5,
+        "support_rate": 0.029239766081871343
+      }
+    }
+  },
+  "median_observational_perturbation_magnitude_spearman": 0.19999999999999998,
+  "median_observational_perturbation_oriented_spearman": -0.19999999999999998,
+  "incremental_prediction": [
+    {
+      "outcome": "author_TF_sensitive",
+      "metric": "AUPRC",
+      "edges": 619,
+      "positives": 396,
+      "baseline_mean": 0.8590924874477759,
+      "extended_mean": 0.8611341134006445,
+      "mean_difference_across_repeats": 0.0020416259528686586,
+      "minimum_difference_across_repeats": -0.0020076800620582036,
+      "maximum_difference_across_repeats": 0.004204555823206779,
+      "repeat_positive_fraction": 0.9,
+      "target_bootstrap_difference_q025": -0.0025334252894547936,
+      "target_bootstrap_difference_q975": 0.011604273612884873
+    },
+    {
+      "outcome": "author_TF_sensitive",
+      "metric": "AUROC",
+      "edges": 619,
+      "positives": 396,
+      "baseline_mean": 0.7870215609004847,
+      "extended_mean": 0.7932927934049009,
+      "mean_difference_across_repeats": 0.0062712325044163185,
+      "minimum_difference_across_repeats": 0.0014268242967792055,
+      "maximum_difference_across_repeats": 0.009478189971463546,
+      "repeat_positive_fraction": 1.0,
+      "target_bootstrap_difference_q025": -0.005415358785022797,
+      "target_bootstrap_difference_q975": 0.017215545342459122
+    },
+    {
+      "outcome": "author_effect_025",
+      "metric": "AUPRC",
+      "edges": 619,
+      "positives": 64,
+      "baseline_mean": 0.3416909596498797,
+      "extended_mean": 0.40020491038443246,
+      "mean_difference_across_repeats": 0.05851395073455281,
+      "minimum_difference_across_repeats": 0.03560975928986143,
+      "maximum_difference_across_repeats": 0.08298064093570051,
+      "repeat_positive_fraction": 1.0,
+      "target_bootstrap_difference_q025": -0.014408372603105013,
+      "target_bootstrap_difference_q975": 0.11104983747545015
+    },
+    {
+      "outcome": "author_effect_025",
+      "metric": "AUROC",
+      "edges": 619,
+      "positives": 64,
+      "baseline_mean": 0.834120213963964,
+      "extended_mean": 0.8340892454954956,
+      "mean_difference_across_repeats": -3.096846846846746e-05,
+      "minimum_difference_across_repeats": -0.009825450450450579,
+      "maximum_difference_across_repeats": 0.01337274774774766,
+      "repeat_positive_fraction": 0.55,
+      "target_bootstrap_difference_q025": -0.045143887624635906,
+      "target_bootstrap_difference_q975": 0.02347115626379822
+    },
+    {
+      "outcome": "author_supported_concordant",
+      "metric": "AUPRC",
+      "edges": 619,
+      "positives": 43,
+      "baseline_mean": 0.3244776436259539,
+      "extended_mean": 0.47303569376826227,
+      "mean_difference_across_repeats": 0.1485580501423084,
+      "minimum_difference_across_repeats": 0.11739305575157533,
+      "maximum_difference_across_repeats": 0.1934996566140164,
+      "repeat_positive_fraction": 1.0,
+      "target_bootstrap_difference_q025": 0.022875633166705593,
+      "target_bootstrap_difference_q975": 0.23965686578259493
+    },
+    {
+      "outcome": "author_supported_concordant",
+      "metric": "AUROC",
+      "edges": 619,
+      "positives": 43,
+      "baseline_mean": 0.8942082525839792,
+      "extended_mean": 0.893388646640827,
+      "mean_difference_across_repeats": -0.0008196059431524516,
+      "minimum_difference_across_repeats": -0.008519056847545392,
+      "maximum_difference_across_repeats": 0.004643087855297212,
+      "repeat_positive_fraction": 0.45,
+      "target_bootstrap_difference_q025": -0.03915903075150892,
+      "target_bootstrap_difference_q975": 0.020760729348947807
+    },
+    {
+      "outcome": "strict_day14_E1_among_testable_TFs",
+      "metric": "AUPRC",
+      "edges": 389,
+      "positives": 13,
+      "baseline_mean": 0.08119299434636446,
+      "extended_mean": 0.06754828288219802,
+      "mean_difference_across_repeats": -0.013644711464166407,
+      "minimum_difference_across_repeats": -0.026696814464093985,
+      "maximum_difference_across_repeats": -0.004995544338934718,
+      "repeat_positive_fraction": 0.0,
+      "target_bootstrap_difference_q025": -0.05618593780921866,
+      "target_bootstrap_difference_q975": -0.009700577190273991
+    },
+    {
+      "outcome": "strict_day14_E1_among_testable_TFs",
+      "metric": "AUROC",
+      "edges": 389,
+      "positives": 13,
+      "baseline_mean": 0.7966959901800326,
+      "extended_mean": 0.7522504091653028,
+      "mean_difference_across_repeats": -0.04444558101472994,
+      "minimum_difference_across_repeats": -0.0889934533551554,
+      "maximum_difference_across_repeats": -0.0155482815057284,
+      "repeat_positive_fraction": 0.0,
+      "target_bootstrap_difference_q025": -0.14121485761901306,
+      "target_bootstrap_difference_q975": -0.04233565090646005
+    }
+  ],
+  "within_TF_transportability_enrichment": [
+    {
+      "outcome": "author_effect_025",
+      "TF": "BCL11A",
+      "variable_edges": 65,
+      "variable_supported": 3,
+      "transportable_edges": 70,
+      "transportable_supported": 0,
+      "odds_ratio": 0.0,
+      "fisher_p_value": 0.10892903901544908,
+      "fisher_fdr_within_outcome": 0.21785807803089816
+    },
+    {
+      "outcome": "author_effect_025",
+      "TF": "GATA1",
+      "variable_edges": 70,
+      "variable_supported": 23,
+      "transportable_edges": 12,
+      "transportable_supported": 9,
+      "odds_ratio": 6.130434782608695,
+      "fisher_p_value": 0.009135479087112295,
+      "fisher_fdr_within_outcome": 0.027406437261336885
+    },
+    {
+      "outcome": "author_effect_025",
+      "TF": "GFI1B",
+      "variable_edges": 59,
+      "variable_supported": 2,
+      "transportable_edges": 22,
+      "transportable_supported": 7,
+      "odds_ratio": 13.3,
+      "fisher_p_value": 0.001192714235890931,
+      "fisher_fdr_within_outcome": 0.007156285415345586
+    },
+    {
+      "outcome": "author_effect_025",
+      "TF": "KLF1",
+      "variable_edges": 51,
+      "variable_supported": 0,
+      "transportable_edges": 32,
+      "transportable_supported": 0,
+      "odds_ratio": NaN,
+      "fisher_p_value": 1.0,
+      "fisher_fdr_within_outcome": 1.0
+    },
+    {
+      "outcome": "author_effect_025",
+      "TF": "NFE2",
+      "variable_edges": 102,
+      "variable_supported": 10,
+      "transportable_edges": 69,
+      "transportable_supported": 9,
+      "odds_ratio": 1.38,
+      "fisher_p_value": 0.6211743087814812,
+      "fisher_fdr_within_outcome": 0.9317614631722217
+    },
+    {
+      "outcome": "author_effect_025",
+      "TF": "TAL1",
+      "variable_edges": 37,
+      "variable_supported": 1,
+      "transportable_edges": 30,
+      "transportable_supported": 0,
+      "odds_ratio": 0.0,
+      "fisher_p_value": 1.0,
+      "fisher_fdr_within_outcome": 1.0
+    },
+    {
+      "outcome": "author_supported_concordant",
+      "TF": "BCL11A",
+      "variable_edges": 65,
+      "variable_supported": 1,
+      "transportable_edges": 70,
+      "transportable_supported": 0,
+      "odds_ratio": 0.0,
+      "fisher_p_value": 0.48148148148148157,
+      "fisher_fdr_within_outcome": 0.9629629629629631
+    },
+    {
+      "outcome": "author_supported_concordant",
+      "TF": "GATA1",
+      "variable_edges": 70,
+      "variable_supported": 22,
+      "transportable_edges": 12,
+      "transportable_supported": 9,
+      "odds_ratio": 6.545454545454546,
+      "fisher_p_value": 0.007720060748081957,
+      "fisher_fdr_within_outcome": 0.023160182244245868
+    },
+    {
+      "outcome": "author_supported_concordant",
+      "TF": "GFI1B",
+      "variable_edges": 59,
+      "variable_supported": 2,
+      "transportable_edges": 22,
+      "transportable_supported": 7,
+      "odds_ratio": 13.3,
+      "fisher_p_value": 0.001192714235890931,
+      "fisher_fdr_within_outcome": 0.007156285415345586
+    },
+    {
+      "outcome": "author_supported_concordant",
+      "TF": "KLF1",
+      "variable_edges": 51,
+      "variable_supported": 0,
+      "transportable_edges": 32,
+      "transportable_supported": 0,
+      "odds_ratio": NaN,
+      "fisher_p_value": 1.0,
+      "fisher_fdr_within_outcome": 1.0
+    },
+    {
+      "outcome": "author_supported_concordant",
+      "TF": "NFE2",
+      "variable_edges": 102,
+      "variable_supported": 1,
+      "transportable_edges": 69,
+      "transportable_supported": 0,
+      "odds_ratio": 0.0,
+      "fisher_p_value": 1.0,
+      "fisher_fdr_within_outcome": 1.0
+    },
+    {
+      "outcome": "author_supported_concordant",
+      "TF": "TAL1",
+      "variable_edges": 37,
+      "variable_supported": 1,
+      "transportable_edges": 30,
+      "transportable_supported": 0,
+      "odds_ratio": 0.0,
+      "fisher_p_value": 1.0,
+      "fisher_fdr_within_outcome": 1.0
+    },
+    {
+      "outcome": "E1_supported",
+      "TF": "BCL11A",
+      "variable_edges": 65,
+      "variable_supported": 0,
+      "transportable_edges": 70,
+      "transportable_supported": 0,
+      "odds_ratio": NaN,
+      "fisher_p_value": 1.0,
+      "fisher_fdr_within_outcome": 1.0
+    },
+    {
+      "outcome": "E1_supported",
+      "TF": "KLF1",
+      "variable_edges": 51,
+      "variable_supported": 0,
+      "transportable_edges": 32,
+      "transportable_supported": 0,
+      "odds_ratio": NaN,
+      "fisher_p_value": 1.0,
+      "fisher_fdr_within_outcome": 1.0
+    },
+    {
+      "outcome": "E1_supported",
+      "TF": "NFE2",
+      "variable_edges": 102,
+      "variable_supported": 8,
+      "transportable_edges": 69,
+      "transportable_supported": 5,
+      "odds_ratio": 0.91796875,
+      "fisher_p_value": 1.0,
+      "fisher_fdr_within_outcome": 1.0
+    }
+  ],
+  "interpretation_boundary": "Transportability is a prediction feature within this atlas, not a formal invariant-causal test or proof of direct regulation."
+}

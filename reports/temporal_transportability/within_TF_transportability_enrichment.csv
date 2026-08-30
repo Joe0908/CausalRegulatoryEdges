@@ -1,0 +1,16 @@
+outcome,TF,variable_edges,variable_supported,transportable_edges,transportable_supported,odds_ratio,fisher_p_value,fisher_fdr_within_outcome
+author_effect_025,BCL11A,65,3,70,0,0.0,0.10892903901544908,0.21785807803089816
+author_effect_025,GATA1,70,23,12,9,6.130434782608695,0.009135479087112295,0.027406437261336885
+author_effect_025,GFI1B,59,2,22,7,13.3,0.001192714235890931,0.007156285415345586
+author_effect_025,KLF1,51,0,32,0,,1.0,1.0
+author_effect_025,NFE2,102,10,69,9,1.38,0.6211743087814812,0.9317614631722217
+author_effect_025,TAL1,37,1,30,0,0.0,1.0,1.0
+author_supported_concordant,BCL11A,65,1,70,0,0.0,0.48148148148148157,0.9629629629629631
+author_supported_concordant,GATA1,70,22,12,9,6.545454545454546,0.007720060748081957,0.023160182244245868
+author_supported_concordant,GFI1B,59,2,22,7,13.3,0.001192714235890931,0.007156285415345586
+author_supported_concordant,KLF1,51,0,32,0,,1.0,1.0
+author_supported_concordant,NFE2,102,1,69,0,0.0,1.0,1.0
+author_supported_concordant,TAL1,37,1,30,0,0.0,1.0,1.0
+E1_supported,BCL11A,65,0,70,0,,1.0,1.0
+E1_supported,KLF1,51,0,32,0,,1.0,1.0
+E1_supported,NFE2,102,8,69,5,0.91796875,1.0,1.0

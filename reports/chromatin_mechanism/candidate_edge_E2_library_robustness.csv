@@ -1,0 +1,5 @@
+TF,target,E2_peaks,random_effects_robust_peaks,all_lolo_robust_peaks,within_library_sign_robust_peaks,retains_random_effects_peak,retains_all_lolo_peak,retains_sign_robust_peak
+GATA1,ALAS2,1,1,1,0,True,True,False
+GATA1,CPEB4,3,3,2,1,True,True,True
+GATA1,SLC25A37,5,5,5,5,True,True,True
+GATA1,SPTA1,2,2,2,1,True,True,True

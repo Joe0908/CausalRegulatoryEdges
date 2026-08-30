@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edge-causality"
+version = "1.0.0"
+description = "Causal validation of observational single-cell regulatory edges"
+requires-python = ">=3.10"
+dependencies = [
+  "h5py>=3.10",
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "PyYAML>=6.0",
+  "scipy>=1.10",
+  "scikit-learn>=1.4",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+external = ["anndata>=0.10,<0.12", "pyliftover>=0.4"]
+
+[project.scripts]
+edge-audit = "edge_causality.audit_metadata:main"
+edge-pseudobulk = "edge_causality.build_pseudobulk:main"
+edge-build-controls = "edge_causality.build_control_rna:main"
+edge-score-guides = "edge_causality.score_perturbations:main"
+edge-residual-grn = "edge_causality.residualized_grn:main"
+edge-grnboost2 = "edge_causality.grnboost2_local:main"
+edge-validate = "edge_causality.validate_edges:main"
+edge-evaluate-author = "edge_causality.evaluate_author_truth:main"
+edge-state-dependence = "edge_causality.state_dependence:main"
+edge-response-persistence = "edge_causality.response_persistence:main"
+edge-time-resolved-support = "edge_causality.time_resolved_support:main"
+edge-trajectory-shift = "edge_causality.trajectory_shift:main"
+edge-state-pseudobulk = "edge_causality.build_state_pseudobulk:main"
+edge-within-state = "edge_causality.within_state:main"
+edge-build-targeted-multiome = "edge_causality.build_targeted_multiome:main"
+edge-chromatin-mechanism = "edge_causality.chromatin_mechanism:main"
+edge-e2-library-robustness = "edge_causality.e2_library_robustness:main"
+edge-guide-signature-sensitivity = "edge_causality.guide_signature_sensitivity:main"
+edge-motif-support = "edge_causality.motif_support:main"
+edge-within-state-chromatin = "edge_causality.within_state_chromatin:main"
+edge-external-validation = "edge_causality.external_validation:main"
+edge-terminal-validation = "edge_causality.terminal_validation:main"
+edge-robustness-audit = "edge_causality.robustness_audit:main"
+edge-temporal-transportability = "edge_causality.temporal_transportability:main"
+edge-discovery-selection-bias = "edge_causality.discovery_selection_bias:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

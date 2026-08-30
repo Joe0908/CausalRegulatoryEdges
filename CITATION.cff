@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this code or analysis, please cite this repository."
+title: "Interventional validation of single-cell regulatory networks"
+type: software
+authors:
+  - family-names: Tao
+    given-names: Yuqi
+repository-code: "https://github.com/Joe0908/CausalRegulatoryEdges"
+url: "https://github.com/Joe0908/CausalRegulatoryEdges"
+version: 1.0.0
+date-released: 2026-08-22
+license: MIT
+keywords:
+  - Perturb-seq
+  - single-cell multiome
+  - gene regulatory networks
+  - causal validation
+  - erythropoiesis
+abstract: >-
+  A reproducible workflow for evaluating observational TF-target relationships
+  with single-cell perturbation, paired RNA/ATAC, and external temporal data.

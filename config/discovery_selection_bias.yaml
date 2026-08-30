@@ -1,0 +1,56 @@
+analysis:
+  name: discovery-stage-selection-bias
+  status: post-freeze_bounded_audit
+  random_seed: 20260820
+
+inputs:
+  controls: data/processed/controls_all_timepoints
+  candidate_universe: reports/residualized_grn/residualized_signed_edges.csv.gz
+  frozen_E0: reports/residualized_grn/stable_residualized_edges.csv
+  validation_matrix: reports/validation/E0_to_E1_edge_matrix.csv.gz
+  pseudobulk: data/processed/pseudobulk
+
+estimand:
+  candidate_edges: 43740
+  fixed_target_universe: day14_7291_candidate_targets
+  ordered_timepoints: [day 7, day 9, day 11, day 14]
+  preterminal_timepoints: [day 7, day 9, day 11]
+  control_guides: [NT_1, NT_2, NT_3]
+  erythroid_cell_types:
+    - BFU-E
+    - CFU-E
+    - Pro-Erythroblast
+    - Basophilic Erythroblast
+    - Polychromatic Erythroblast
+    - Orthochromatic Erythroblast
+  original_day14_cell_types:
+    - Polychromatic Erythroblast
+    - Orthochromatic Erythroblast
+  minimum_cells_per_library: 30
+
+discovery:
+  bootstrap_iterations: 100
+  top_fraction: 0.05
+  minimum_bootstrap_frequency: 0.70
+  strata: [replicate, new_CellType]
+  power_matched_sensitivity:
+    enabled: true
+    common_cell_count: auto_minimum
+    equalize_library_contribution: true
+    preserve_within_library_state_composition: true
+  state_residualization_sensitivity:
+    enabled: true
+    adjustment: depth_and_library_only
+    bootstrap_iterations: 100
+
+intervention:
+  candidate_set: union_of_timepoint_E0_and_frozen_day14_E0
+  multiplicity: BH_across_all_finite_union_edge_by_time_tests
+  label: strict_collection_time_total_response_support_not_E1
+
+interpretation:
+  - The original 619 day14 E0 edges and 13 state-matched E1 edges remain unchanged.
+  - Timepoint-specific discovery estimates context-specific observational selection, not a pure within-state time effect.
+  - Power matching equalizes cell count and library contribution but cannot equalize biological state composition across development.
+  - A TF perturbation response may be indirect or mediated by differentiation and is not proof of a direct TF-target edge.
+  - Frozen day14 guide efficacy is assumed to transport across collection time.

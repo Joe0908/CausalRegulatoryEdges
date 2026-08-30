@@ -1,0 +1,314 @@
+{
+  "metadata_rows_raw": 275208,
+  "blank_rows_removed": 137604,
+  "metadata_cells_qc_pass": 137604,
+  "libraries_audited": 14,
+  "all_metadata_barcodes_recovered": true,
+  "metadata_barcodes_missing_total": 0,
+  "gene_features_identical_across_libraries": true,
+  "gene_feature_signatures": [
+    "96e8838bc435bbc81b9f7b371fe2bf2ca9707195b9b97c7c5ea5678048b2595a"
+  ],
+  "timepoint_cell_counts": {
+    "day 9": 50116,
+    "day 7": 43723,
+    "day 14": 22974,
+    "day 11": 20791
+  },
+  "libraries": [
+    {
+      "path": "data/raw/all_timepoints/GSE274113_rep1_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        194891,
+        13168
+      ],
+      "nonzero_entries": 200763243,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 158290
+      },
+      "gene_feature_signature": "96e8838bc435bbc81b9f7b371fe2bf2ca9707195b9b97c7c5ea5678048b2595a",
+      "h5_barcodes": 13168,
+      "metadata_barcodes": 12928,
+      "intersection": 12928,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 240,
+      "replicate": "rep1",
+      "timepoint": "day 7",
+      "qc_metadata_cells": 12928
+    },
+    {
+      "path": "data/raw/all_timepoints/GSE274113_rep2_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        189769,
+        9266
+      ],
+      "nonzero_entries": 158993375,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 153168
+      },
+      "gene_feature_signature": "96e8838bc435bbc81b9f7b371fe2bf2ca9707195b9b97c7c5ea5678048b2595a",
+      "h5_barcodes": 9266,
+      "metadata_barcodes": 9095,
+      "intersection": 9095,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 171,
+      "replicate": "rep2",
+      "timepoint": "day 7",
+      "qc_metadata_cells": 9095
+    },
+    {
+      "path": "data/raw/all_timepoints/GSE274113_rep3_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        184630,
+        8276
+      ],
+      "nonzero_entries": 127594931,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 148029
+      },
+      "gene_feature_signature": "96e8838bc435bbc81b9f7b371fe2bf2ca9707195b9b97c7c5ea5678048b2595a",
+      "h5_barcodes": 8276,
+      "metadata_barcodes": 8078,
+      "intersection": 8078,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 198,
+      "replicate": "rep3",
+      "timepoint": "day 7",
+      "qc_metadata_cells": 8078
+    },
+    {
+      "path": "data/raw/all_timepoints/GSE274113_rep4_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        194848,
+        13915
+      ],
+      "nonzero_entries": 221319117,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 158247
+      },
+      "gene_feature_signature": "96e8838bc435bbc81b9f7b371fe2bf2ca9707195b9b97c7c5ea5678048b2595a",
+      "h5_barcodes": 13915,
+      "metadata_barcodes": 13622,
+      "intersection": 13622,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 293,
+      "replicate": "rep4",
+      "timepoint": "day 7",
+      "qc_metadata_cells": 13622
+    },
+    {
+      "path": "data/raw/all_timepoints/GSE274113_rep5_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        178847,
+        11332
+      ],
+      "nonzero_entries": 163197337,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 142246
+      },
+      "gene_feature_signature": "96e8838bc435bbc81b9f7b371fe2bf2ca9707195b9b97c7c5ea5678048b2595a",
+      "h5_barcodes": 11332,
+      "metadata_barcodes": 11233,
+      "intersection": 11233,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 99,
+      "replicate": "rep5",
+      "timepoint": "day 9",
+      "qc_metadata_cells": 11233
+    },
+    {
+      "path": "data/raw/all_timepoints/GSE274113_rep6_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        178627,
+        12282
+      ],
+      "nonzero_entries": 179114965,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 142026
+      },
+      "gene_feature_signature": "96e8838bc435bbc81b9f7b371fe2bf2ca9707195b9b97c7c5ea5678048b2595a",
+      "h5_barcodes": 12282,
+      "metadata_barcodes": 12193,
+      "intersection": 12193,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 89,
+      "replicate": "rep6",
+      "timepoint": "day 9",
+      "qc_metadata_cells": 12193
+    },
+    {
+      "path": "data/raw/all_timepoints/GSE274113_rep7_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        175965,
+        11510
+      ],
+      "nonzero_entries": 169552830,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 139364
+      },
+      "gene_feature_signature": "96e8838bc435bbc81b9f7b371fe2bf2ca9707195b9b97c7c5ea5678048b2595a",
+      "h5_barcodes": 11510,
+      "metadata_barcodes": 11412,
+      "intersection": 11412,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 98,
+      "replicate": "rep7",
+      "timepoint": "day 9",
+      "qc_metadata_cells": 11412
+    },
+    {
+      "path": "data/raw/all_timepoints/GSE274113_rep8_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        183576,
+        15407
+      ],
+      "nonzero_entries": 223452442,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 146975
+      },
+      "gene_feature_signature": "96e8838bc435bbc81b9f7b371fe2bf2ca9707195b9b97c7c5ea5678048b2595a",
+      "h5_barcodes": 15407,
+      "metadata_barcodes": 15278,
+      "intersection": 15278,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 129,
+      "replicate": "rep8",
+      "timepoint": "day 9",
+      "qc_metadata_cells": 15278
+    },
+    {
+      "path": "data/raw/all_timepoints/GSE274113_rep9_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        161732,
+        7106
+      ],
+      "nonzero_entries": 121133449,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 125131
+      },
+      "gene_feature_signature": "96e8838bc435bbc81b9f7b371fe2bf2ca9707195b9b97c7c5ea5678048b2595a",
+      "h5_barcodes": 7106,
+      "metadata_barcodes": 6991,
+      "intersection": 6991,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 115,
+      "replicate": "rep9",
+      "timepoint": "day 11",
+      "qc_metadata_cells": 6991
+    },
+    {
+      "path": "data/raw/all_timepoints/GSE274113_rep10_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        162044,
+        7360
+      ],
+      "nonzero_entries": 128976835,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 125443
+      },
+      "gene_feature_signature": "96e8838bc435bbc81b9f7b371fe2bf2ca9707195b9b97c7c5ea5678048b2595a",
+      "h5_barcodes": 7360,
+      "metadata_barcodes": 7285,
+      "intersection": 7285,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 75,
+      "replicate": "rep10",
+      "timepoint": "day 11",
+      "qc_metadata_cells": 7285
+    },
+    {
+      "path": "data/raw/all_timepoints/GSE274113_rep12_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        160917,
+        6595
+      ],
+      "nonzero_entries": 119809962,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 124316
+      },
+      "gene_feature_signature": "96e8838bc435bbc81b9f7b371fe2bf2ca9707195b9b97c7c5ea5678048b2595a",
+      "h5_barcodes": 6595,
+      "metadata_barcodes": 6515,
+      "intersection": 6515,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 80,
+      "replicate": "rep12",
+      "timepoint": "day 11",
+      "qc_metadata_cells": 6515
+    },
+    {
+      "path": "data/raw/all_timepoints/GSE274113_rep13_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        136365,
+        10678
+      ],
+      "nonzero_entries": 113657562,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 99764
+      },
+      "gene_feature_signature": "96e8838bc435bbc81b9f7b371fe2bf2ca9707195b9b97c7c5ea5678048b2595a",
+      "h5_barcodes": 10678,
+      "metadata_barcodes": 6611,
+      "intersection": 6611,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 4067,
+      "replicate": "rep13",
+      "timepoint": "day 14",
+      "qc_metadata_cells": 6611
+    },
+    {
+      "path": "data/raw/all_timepoints/GSE274113_rep14_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        130175,
+        12224
+      ],
+      "nonzero_entries": 113826535,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 93574
+      },
+      "gene_feature_signature": "96e8838bc435bbc81b9f7b371fe2bf2ca9707195b9b97c7c5ea5678048b2595a",
+      "h5_barcodes": 12224,
+      "metadata_barcodes": 7743,
+      "intersection": 7743,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 4481,
+      "replicate": "rep14",
+      "timepoint": "day 14",
+      "qc_metadata_cells": 7743
+    },
+    {
+      "path": "data/raw/all_timepoints/GSE274113_rep16_filtered_feature_bc_matrix.h5",
+      "shape_features_by_cells": [
+        137410,
+        13596
+      ],
+      "nonzero_entries": 134237296,
+      "feature_types": {
+        "Gene Expression": 36601,
+        "Peaks": 100809
+      },
+      "gene_feature_signature": "96e8838bc435bbc81b9f7b371fe2bf2ca9707195b9b97c7c5ea5678048b2595a",
+      "h5_barcodes": 13596,
+      "metadata_barcodes": 8620,
+      "intersection": 8620,
+      "metadata_missing_from_h5": 0,
+      "h5_cells_excluded_by_metadata_qc": 4976,
+      "replicate": "rep16",
+      "timepoint": "day 14",
+      "qc_metadata_cells": 8620
+    }
+  ]
+}

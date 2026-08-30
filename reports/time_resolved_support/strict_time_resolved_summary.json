@@ -1,0 +1,38 @@
+{
+  "status": "strict_refit_completed",
+  "estimand": "collection-time-specific total RNA intervention response",
+  "original_day14_state_matched_E1_unchanged": true,
+  "E0_edges_frozen": 619,
+  "edge_time_hypotheses": 1556,
+  "testable_edges": 389,
+  "support_by_timepoint": {
+    "day 7": 3,
+    "day 9": 4,
+    "day 11": 3,
+    "day 14": 13
+  },
+  "any_timepoint_support": 21,
+  "support_patterns": {
+    "0000": 598,
+    "0001": 12,
+    "1000": 3,
+    "0100": 3,
+    "0010": 2,
+    "0111": 1
+  },
+  "temporal_support_classes": {
+    "no_timepoint_support_detected": 368,
+    "guide_efficacy_limited": 230,
+    "localized_support_no_detected_heterogeneity": 14,
+    "late_onset_support_detected": 3,
+    "time_varying_support_candidate": 2,
+    "late_amplification_support_detected": 2
+  },
+  "multiplicity": "BH across all finite frozen E0 edge-by-time tests",
+  "limitations": [
+    "total effects may include perturbation-induced lineage-composition shifts",
+    "lack of support at a timepoint is not evidence of a zero effect",
+    "resolved early/transient/late labels require globally adjusted contrasts and endpoint equivalence",
+    "frozen day-14 guide efficacy is assumed to transport across collection time"
+  ]
+}
